@@ -4,7 +4,7 @@ Fun bitonic sequence generator favoring cleverness over readability
 ```typescript
 const getBitonic = (size: number): number[] =>
   size > 3
-    ? [[...Array(size)].map((_, i) => i)]
+    ? [[...Array(size).keys()]]
         .map(
           (arr) =>
             arr.push(
